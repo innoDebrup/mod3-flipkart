@@ -1,0 +1,11 @@
+uuid: c04f8b76-ca9d-4f4f-9ae1-4e7525871359
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.card
+label: Card
+description: 'Card Display for items.'
+targetEntityType: node
+cache: true

@@ -1,0 +1,141 @@
+uuid: e75ff84b-3501-42ee-bfbf-ce573ad9b3eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.items.field_category
+    - field.field.node.items.field_description
+    - field.field.node.items.field_item_image
+    - field.field.node.items.field_price
+    - node.type.items
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Main section'
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          5d73fe5f-55dc-4e6d-9879-3808a9a4f967:
+            uuid: 5d73fe5f-55dc-4e6d-9879-3808a9a4f967
+            region: second
+            configuration:
+              id: 'field_block:node:items:field_description'
+              label: Description
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          972db608-fb9e-4c72-b4ba-6af29f7fec84:
+            uuid: 972db608-fb9e-4c72-b4ba-6af29f7fec84
+            region: first
+            configuration:
+              id: 'field_block:node:items:field_item_image'
+              label: 'Item Image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: thumbnail
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Price Section'
+          context_mapping: {  }
+        components:
+          60ad07e6-765c-4aab-b206-1fbdbc2c748c:
+            uuid: 60ad07e6-765c-4aab-b206-1fbdbc2c748c
+            region: content
+            configuration:
+              id: 'field_block:node:items:field_price'
+              label: Price
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ','
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.items.card
+targetEntityType: node
+bundle: items
+mode: card
+content:
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_description:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_item_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

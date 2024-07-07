@@ -1,0 +1,35 @@
+uuid: 7624f7aa-2156-4cfe-a71c-f8b61b9b9649
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.2_wheelers
+    - media.type.image
+    - node.type.items
+  module:
+    - admin_toolbar_search
+    - entityqueue
+    - layout_builder
+    - media
+    - node
+    - toolbar
+id: content_admin_3
+label: 'Content admin 3'
+weight: 6
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'create and edit custom blocks'
+  - 'create image media'
+  - 'create items content'
+  - 'delete own image media'
+  - 'edit own image media'
+  - 'edit own items content'
+  - 'manipulate entityqueues'
+  - 'revert items revisions'
+  - 'update 2_wheelers entityqueue'
+  - 'update media'
+  - 'use admin toolbar search'
+  - 'view items revisions'

@@ -1,0 +1,39 @@
+uuid: 6d6d843e-8a1a-472c-9424-360b0c1352d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.appliances
+    - entityqueue.entity_queue.electronics
+    - entityqueue.entity_queue.grocery
+    - media.type.image
+    - node.type.items
+  module:
+    - admin_toolbar_search
+    - entityqueue
+    - layout_builder
+    - media
+    - node
+    - toolbar
+id: content_admin_1
+label: 'Content Admin 1'
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'create and edit custom blocks'
+  - 'create image media'
+  - 'create items content'
+  - 'delete own image media'
+  - 'edit own image media'
+  - 'edit own items content'
+  - 'manipulate entityqueues'
+  - 'revert items revisions'
+  - 'update appliances entityqueue'
+  - 'update electronics entityqueue'
+  - 'update grocery entityqueue'
+  - 'update media'
+  - 'use admin toolbar search'
+  - 'view items revisions'
