@@ -1,0 +1,26 @@
+uuid: 0aa25d07-431d-4d34-9e33-643e01ce4a7c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: 2_wheelers
+label: '2 Wheelers'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      items: items
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

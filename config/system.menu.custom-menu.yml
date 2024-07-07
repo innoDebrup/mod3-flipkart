@@ -1,0 +1,8 @@
+uuid: 4243313a-bd20-413e-9ed1-5a1085488399
+langcode: en
+status: true
+dependencies: {  }
+id: custom-menu
+label: 'Become a seller Menu'
+description: 'Become a seller link in the header'
+locked: false

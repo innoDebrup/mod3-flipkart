@@ -1,0 +1,19 @@
+uuid: 0bc07ca8-4827-4cf9-a534-081f872ea30c
+langcode: en
+status: true
+dependencies:
+  config:
+    - business_rules.action.send_email
+id: item_creation
+label: 'Item Creation'
+description: 'Reacts when an item is created.'
+reacts_on: entity_insert
+target_entity_type: node
+target_bundle: items
+items:
+  send_email:
+    type: action
+    id: send_email
+    weight: -9
+tags: {  }
+enabled: null

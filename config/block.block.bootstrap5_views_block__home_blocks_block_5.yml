@@ -1,0 +1,29 @@
+uuid: 1d38ea9c-dcf6-4539-9c70-fa04a4789adf
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.home_blocks
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap5
+id: bootstrap5_views_block__home_blocks_block_5
+theme: bootstrap5
+region: content
+weight: 1
+provider: null
+plugin: 'views_block:home_blocks-block_5'
+settings:
+  id: 'views_block:home_blocks-block_5'
+  label: 'Home & Furniture'
+  label_display: visible
+  provider: views
+  views_label: 'Home & Furniture'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

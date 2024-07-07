@@ -1,0 +1,9 @@
+uuid: f8429440-ade5-451a-aee7-73c6acf2432e
+langcode: en
+status: true
+dependencies: {  }
+name: Categories
+vid: categories
+description: 'Site Item categories'
+weight: 0
+new_revision: false

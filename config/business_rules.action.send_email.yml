@@ -1,0 +1,20 @@
+uuid: 1fd8043c-24ce-4f0e-a061-2506bd87d4e9
+langcode: en
+status: true
+dependencies: {  }
+id: send_email
+label: 'Send Email'
+description: 'Sends email when a content is created.'
+type: send_email
+target_entity_type: null
+target_bundle: null
+tags: {  }
+settings:
+  subject: 'New Item Created.[node:field_category:entity:name]'
+  use_site_mail_as_sender: true
+  from: ''
+  to: dptest.life@gmail.com
+  format: text
+  body:
+    format: full_html
+    value: '<p>Hello Admin,</p><p>A new piece of content has been created on your site.</p><p>Title: [node:title]<br>Author: [node:author]<br>Category: [node:field_category:entity:name]</p><p>Best regards,<br>Your Website Team</p>'

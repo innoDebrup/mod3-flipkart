@@ -1,0 +1,39 @@
+uuid: 52746419-eb8d-47be-8856-64a4b9756090
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.fashion
+    - entityqueue.entity_queue.home_and_furniture
+    - entityqueue.entity_queue.mobiles
+    - media.type.image
+    - node.type.items
+  module:
+    - admin_toolbar_search
+    - entityqueue
+    - layout_builder
+    - media
+    - node
+    - toolbar
+id: content_admin_2
+label: 'Content Admin 2'
+weight: 5
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'create and edit custom blocks'
+  - 'create image media'
+  - 'create items content'
+  - 'delete own image media'
+  - 'edit own image media'
+  - 'edit own items content'
+  - 'manipulate entityqueues'
+  - 'revert items revisions'
+  - 'update fashion entityqueue'
+  - 'update home_and_furniture entityqueue'
+  - 'update media'
+  - 'update mobiles entityqueue'
+  - 'use admin toolbar search'
+  - 'view items revisions'

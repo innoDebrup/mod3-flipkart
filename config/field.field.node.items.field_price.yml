@@ -1,0 +1,23 @@
+uuid: 7adc2127-0bd2-4b76-ae4f-2b835e866293
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.items
+id: node.items.field_price
+field_name: field_price
+entity_type: node
+bundle: items
+label: Price
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ₹
+  suffix: ''
+field_type: integer

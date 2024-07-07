@@ -1,0 +1,10 @@
+uuid: 28bb0788-a321-4600-9576-5bb9423348d3
+langcode: en
+status: true
+dependencies: {  }
+id: banner
+label: Banner
+icon_uuid: null
+icon_default: null
+description: 'Banner with Heading and a Link'
+behavior_plugins: {  }

@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: en
+uuid: d3a9a392-c005-42c5-bf4f-3f1aa3d05ade
+name: Local Employee Management Portal
+mail: flipkart@site.com
+slogan: ''
+page:
+  403: /node/61
+  404: /node/60
+  front: /node/56
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null
